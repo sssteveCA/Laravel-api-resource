@@ -35,7 +35,7 @@
                             <label class="mr-1" for="eta">Età</label>
                         </td>
                         <td>
-                            <input id="età" type="number" name="età">
+                            <input id="eta" type="number" name="eta">
                         </td>
                     </tr>
                     <tr>

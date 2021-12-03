@@ -61,8 +61,8 @@ class PersonaController extends Controller
         else{
             return redirect('error/400')->withErrors(["msg" => "Il campo cognome non può essere vuoto"]);
         }
-        if($request->filled('età')){
-            $età = $request->input('età');
+        if($request->filled('eta')){
+            $età = $request->input('eta');
             if(is_numeric($età)){
                 $persona->età = $età;
             }
@@ -118,8 +118,8 @@ class PersonaController extends Controller
         else{
             return response()->json(["msg" => "Il campo cognome non può essere vuoto"],400,array(),JSON_UNESCAPED_UNICODE);
         }
-        if($request->filled('età')){
-            $età = $request->input('età');
+        if($request->filled('eta')){
+            $età = $request->input('eta');
             if(is_numeric($età)){
                 $persona->età = $età;
             }

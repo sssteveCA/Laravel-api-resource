@@ -21,8 +21,8 @@
                 <tr>
                     <td>{{$persona->id}}</td>
                     <td>{{$persona->nome}}</td>
-                    <td>{{$persona->età}}</td>
-                    <td>{{$persona->altezza}}</td>
+                    <td>{{$persona->età}} anni</td>
+                    <td>{{$persona->altezza}} cm</td>
                     <td>{{$persona->residenza}}</td>
                 </tr>
             @endforeach 

@@ -223,7 +223,7 @@ class PersonaController extends Controller
             return view('personas.update')->with('messaggio',$messaggio);
         }
         else{
-            return redirect('error/404')->withErrors(['msg' => 'La risorsa che stai cercando non è stata trovata']);
+            return redirect('error/404')->withErrors(['msg' => 'La risorsa che vuoi modificare non è stata trovata']);
         }
 
     }
@@ -254,7 +254,7 @@ class PersonaController extends Controller
             return response()->json($messaggio,200,array(),JSON_UNESCAPED_UNICODE);
         }
         else{
-            return response()->json(['msg' => 'La risorsa che stai cercando non è stata trovata'],404,array(),JSON_UNESCAPED_UNICODE);
+            return response()->json(['msg' => 'La risorsa che vuoi modificare non è stata trovata'],404,array(),JSON_UNESCAPED_UNICODE);
         }
     }
 
@@ -278,7 +278,7 @@ class PersonaController extends Controller
             
         }
         else{
-            return redirect('error/404')->withErrors(['msg' => 'La risorsa che stai cercando non è stata trovata']);
+            return redirect('error/404')->withErrors(['msg' => 'La risorsa che vuoi cancellare non è stata trovata']);
         }
     }
 
@@ -303,7 +303,7 @@ class PersonaController extends Controller
             
         }
         else{
-            return response()->json(['msg' => 'La risorsa che stai cercando non è stata trovata'],404,array(),JSON_UNESCAPED_UNICODE);
+            return response()->json(['msg' => 'La risorsa che vuoi cancellare non è stata trovata'],404,array(),JSON_UNESCAPED_UNICODE);
         }
     }
 }

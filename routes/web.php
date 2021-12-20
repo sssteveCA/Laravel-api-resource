@@ -37,26 +37,6 @@ Route::prefix('/form')->group(function(){
     });
 });//Route::prefix('/form')->group(function(){
 
-/*Route::get('/form/all',function(){
-    return view('form/all');
-});
-
-Route::get('/form/get',function(){
-    return view('form/get');
-});
-
-Route::get('/form/createp',function(){
-    return view('form/createp');
-});
-
-Route::get('/form/edit',function(){
-    return view('form/edit');
-});
-
-Route::get('/form/delete',function(){
-    return view('form/delete');
-});*/
-
 
 Route::prefix('/error')->group(function(){
     //Richiesta errata
@@ -69,15 +49,6 @@ Route::prefix('/error')->group(function(){
         return view('error/404');
     });
 });
-/*Richiesta errata
-Route::get('/error/400',function(){
-    return view('error/400');
-});
-
-Risorsa non trovata
-Route::get('/error/404',function(){
-    return view('error/404');
-});*/
 
 //Route::resource('form',FormController::class);
 Route::resource('personas',PersonaController::class);
